@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QuickMath</string>
+    <string-array name="math_list">
+        <item>Completing Square</item>
+        <item>Coordinate Geometry</item>
+        <item>Satistics</item>
+        <item>Coming Soon</item>
+    </string-array>
+
+</resources>

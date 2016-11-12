@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_satictic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="nev.com.quickmath.Satictic_Activity">
+
+    <TextView
+        android:text="Calculate Ungrouped Data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ungrouped_data" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Enter number of variable"
+        android:id="@+id/numofvar"
+        android:layout_below="@+id/ungrouped_data"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/done"
+        android:layout_below="@+id/ungrouped_data"
+        android:layout_toEndOf="@+id/numofvar" />
+    <Button
+    android:text="Clear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/clear"
+    android:layout_weight="0.07"
+        android:layout_below="@+id/numofvar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/ll"
+        android:layout_below="@+id/done"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp">
+
+
+
+    </LinearLayout> <Button
+    android:text="Calculate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/calculatev"
+    android:layout_weight="1"
+    android:layout_toRightOf="@+id/clear"
+    android:layout_below="@+id/numofvar"/>
+
+    <TextView
+        android:text="Mean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/mean" />
+
+    <TextView
+        android:text="Variance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/variance"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/calculatev"
+        android:layout_below="@+id/mean" />
+
+    <TextView
+        android:text="Standard Variance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/standard_variance"
+        android:layout_below="@+id/variance"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:text="Calculate Grouped Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/calcgroupdata"
+        android:layout_below="@+id/standard_variance"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/calcgroupdata"
+        android:layout_alignParentStart="true"
+        android:id="@+id/firstrow">
+
+
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:ems="10"
+            android:id="@+id/lboundary"
+            android:hint="L"
+            />
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:ems="10"
+            android:id="@+id/totalfreq"
+            android:hint="N"/>
+
+        <Button
+            android:text="Done"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/calcgd" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/firstrow"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:ems="10"
+            android:id="@+id/cfb4mc"
+            android:hint="Fcm"/>
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:ems="10"
+            android:id="@+id/freqofmclass"
+            android:hint="fm"
+            />
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:ems="10"
+            android:id="@+id/classintsize"
+            android:hint="c"/>
+
+        <TextView
+            android:text="Mean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/means"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
